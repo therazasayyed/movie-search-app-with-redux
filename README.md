@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## Setup
+
+1. Clone the repository.
+2. Create a `.env` file in the root with the following:
+REACT_APP_OMDB_API_KEY=your_omdb_api_key_here
+
+3. Run the project:
+npm install
+npm start

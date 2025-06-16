@@ -9,7 +9,10 @@ function MovieSearch() {
     const { results, loading, error, page, totalPages } = useSelector((state) => state.movies);
 
     useEffect(() => {
-        if (query.trim()) {
+        // If user hasn't typed anything, load default movies
+        if (query.trim() === '') {
+            dispatch(fetchMovies({ query: 'Avengers', page: 1 }));
+        } else {
             dispatch(fetchMovies({ query, page: 1 }));
         }
     }, [query, dispatch]);
